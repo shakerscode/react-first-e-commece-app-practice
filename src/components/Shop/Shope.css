@@ -1,0 +1,20 @@
+.colomn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.order-bg {
+    background: rgb(255, 236, 69);
+    height: 600px;
+}
+
+.product-header-bg {
+    background-color: aquamarine;
+    border-radius: 7px;
+    box-shadow: 5px 3px 5px rgb(202, 206, 202);
+}
+.cart{
+    border-radius: 10px;
+
+}

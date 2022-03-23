@@ -1,0 +1,26 @@
+.header-height {
+    height: 500px;
+}
+
+.shop-btn {
+    background-color: rgb(255, 236, 69);
+    border-radius: 5px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.shop-btn:hover {
+    background: rgb(252, 255, 54);
+    color: black;
+}
+
+.offer {
+    color: #050505;
+    font-size: 15px;
+}
+
+.container-img {
+    width: 350px;
+    height: 452px;
+    border-radius: 5px;
+}

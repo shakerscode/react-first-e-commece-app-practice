@@ -1,0 +1,23 @@
+.header-bg{
+    background-color: rgb(255, 236, 69);
+}
+.font-size{
+    font-size: 18px;
+}
+.font-weight{
+    font-weight: 500;
+}
+
+/* .font-color{
+    color: black;
+} */
+.nav-link{
+    color: black;
+    margin-left: 25px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.nav-link:hover{
+    background: rgb(255, 253, 111);
+    
+}

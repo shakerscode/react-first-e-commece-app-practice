@@ -4,25 +4,28 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import './Product.css'
 
 
-const Product = ({ name,shipping, key, category, img, price, ratings, ratingsCount, quantity, stock, addToCartbtn, product }) => {
+const Product = ({ name, shipping, id, category, img, price, ratings, ratingsCount, quantity, stock, addToCartbtn, product, addToCartbtnTwo }) => {
     return (
-        <div className=' shadow-lg p-3 m-3'>
+        
+                   <div className='row-colomn-width shadow mt-3'>
+                    <img className='w-75 p-2 rounded' src={img} alt="images" />
+                    <div className='p-3'>
+                        <h5>{name}</h5>
+                        <p>Category: {category}</p>
+                        <p>Price: {price}$</p>
+                        <p>Shipping: {shipping}$</p>
+                        <p>Ratings: {ratings}</p>
+                        <p>Ratings Count: {ratingsCount}</p>
+                        <p>Stock: {stock}</p>
+                    </div>
+                   <div className='p-3'>
+                   <button onClick={() => addToCartbtn(product)} className='px-3 py-2 add-to-cart'>Add to Cart <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon></button>
+                    <button onClick={() => addToCartbtnTwo(id)} className='px-3 fs-6 mt-2 py-2 ms-2 add-to-cart'>Add to Cart & LocalStorage <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
 
-            <img className='w-75' src={img} alt="images" />
-            <div className='p-4'>
-                <h3>{name}</h3>
-                <p>Category: {category}</p>
-                <p>Price: {price}$</p>
-                <p>Shipping: {shipping}$</p>
-                <p>Ratings: {ratings}</p>
-                <p>Ratings Count: {ratingsCount}</p>
-                <p>Quantity: {quantity}</p>
-                <p>Stock: {stock}</p>
-            </div>
-            <button onClick={() => addToCartbtn(product)} className='px-5 py-3 add-to-cart'>Add to Cart <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
-            
-            </button> 
-        </div>
+                    </button>
+                   </div>
+                    </div>
+
     );
 };
 

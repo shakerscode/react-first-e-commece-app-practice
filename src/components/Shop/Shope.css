@@ -1,7 +1,12 @@
 .colomn {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.row-colomn{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    gap: 12px;
 }
 
 .order-bg {

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css'
 
 const Cart = ({cart}) => {
 
@@ -12,7 +13,7 @@ const Cart = ({cart}) => {
     const totalCost = totalShopping + shippingCost + tax;
 
     return (
-        <div>
+        <div className=''>
             <h5 className='p-3'>Order Summery</h5>
             <p>Selected Items: {cart.length}</p>
             <p>Total Shopping Cost: {totalShopping}$</p>
